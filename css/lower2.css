@@ -1,0 +1,92 @@
+img:hover{
+    opacity: 0.8;
+    /* scale */
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    transform: scale(1.01);
+    /* animate scale */
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.upperRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.rightContent{
+    width: 600px;
+}
+
+.aboutUsText{
+    color: #1090CB;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: "Popins", sans-serif;
+}
+
+.aboutUsHeading{
+    font-family: "Popins", sans-serif;
+    color: #252525;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.aboutUsSubText{
+    font-family: "Popins", sans-serif;
+    color: #868686;
+    font-size: 1.2rem;
+}
+
+.lowerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.lowerRow img{
+    margin: 50px;
+}
+
+/* when width reaches mobile width make lower row and upper row as columns */
+@media only screen and (max-width: 500px){
+    .upperRow{
+        flex-direction: column;
+        margin: 50px;
+    }
+    .upperRow img{
+        margin-bottom: 50px;
+    }
+    .aboutUsText{
+        text-align: center;
+    }
+    .aboutUsHeading{
+        text-align: center;
+    }
+    .aboutUsSubText{
+        text-align: center;
+    }
+    .rightContent{
+        width: 100%;
+    }
+    .lowerRow{
+        flex-direction: column;
+    }
+    .lowerRow img{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}

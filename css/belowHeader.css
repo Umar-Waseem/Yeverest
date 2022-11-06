@@ -1,0 +1,67 @@
+.servicesRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px auto;
+    width: 100%;
+}
+
+.serviceHeadingText{
+    margin-left: 20px;
+}
+
+.serviceHeading{
+    color: #003B57;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.serviceText{
+    color: #969696;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.item{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceImages{
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+#freelanceImgDiv{
+    background: #EFEAFF;
+}
+
+#remoteImgDiv{
+    background: #FFE5DA;
+}
+
+#ecommerceImgDiv{
+    background: #ECFFDA;
+}
+
+
+@media screen and (max-width: 508px) {
+
+    .item{
+        width: 90%;
+        margin: 50px;
+    }
+
+    .servicesRow{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}

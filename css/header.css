@@ -1,0 +1,132 @@
+.navbarDiv{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links{
+    /* margin-right: 100px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.links a{
+    text-decoration: none;
+}
+
+.linksText{
+    color: #056282;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navbarDiv img{
+    width: 160.46px;
+    height: 52.9px;
+    align-self: center;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.navbarDiv img:hover{
+    cursor: pointer;
+}
+
+.headDiv{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(16, 144, 203, 0.1);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeftContent{
+    margin-left: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerRightImage{
+    margin-right: 50px;
+}
+
+.headerLeftContentHeading{
+    font-size: 70px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    color: #003B57;
+}
+
+.headerLeftContentText{
+    font-weight: 400;
+    font-size: 16px;
+    color: grey;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 32px;
+}
+
+#we{
+    color: #056282;
+}
+
+.contactUs{
+    height: 40px;
+    width: 150px;
+    border-radius: 8px;
+    background: #056282;
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .headDiv{
+        height: 150vh;
+        width: 100vw;
+        background: rgba(16, 144, 203, 0.1);
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerRightImage{
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .headerLeftContent{
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .headerLeftContentHeading{
+        font-size: 40px;
+        font-weight: 900;
+        font-family: "Roboto", sans-serif;
+        color: #003B57;
+    }
+
+}
