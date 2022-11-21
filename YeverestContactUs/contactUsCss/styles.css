@@ -23,6 +23,7 @@ input{
     border: none;
     /* remove outline */
     border-radius: 10px;
+    padding-left: 10px;
 }
 
 .navbar a:hover {
